@@ -1,0 +1,30 @@
+//이벤트경품안내 포카리굿즈 설명문
+$(".hoverImg").mouseover(function(){
+  $(this).children(".bubbleTxt").stop().animate({
+    'opacity':'0.9',
+    'top':'0'
+  });
+});
+$(".hoverImg").mouseout(function(){
+  $(this).children(".bubbleTxt").stop().animate({
+    'opacity':'0',
+    'top':'-20px'
+  });
+});
+
+
+
+
+
+<div class="hoverImg">
+  <div class="bubbleTxt">친환경 라이프스타일 브랜드<br/> '큐클리프'와의 협업으로 <br/>PET 100% 리사이클 원단으로 제작된<br/> 포카리스웨트 블루라벨 에디션</div>
+</div>
+
+
+
+  
+  
+
+.conWrap section .giveaway .evGCon .slick-slide .hoverImg {position:relative;}
+.conWrap section .giveaway .evGCon .slick-slide .hoverImg .bubbleTxt {opacity:0; position:absolute; top:-20px; left:50%; margin-left:-137px; display:inline-block; padding:20px; background:#fff; border-radius:25px; font-size:14px; color:#00456d; font-weight:500; line-height:1.5;box-shadow: 1px 1px 12px 6px rgba(0,0,0,.1); -webkit-box-shadow: 1px 1px 12px 6px rgba(0,0,0,.1); -moz-box-shadow: 1px 1px 12px 6px rgba(0,0,0,.1); }
+.conWrap section .giveaway .evGCon .slick-slide .hoverImg .bubbleTxt:after {border-radius: 2px;background-color: #fff;content: "";width:11px;height: 11px;left: 50%;position: absolute;top:calc(100% - 12px / 2);transform:translateX(-50%) rotate(45deg);}
